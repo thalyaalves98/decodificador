@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Decodificador de Texto </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="logo">
+      <a href="index.html">
+        <img src="assets/logo_alura.jpg" alt="Logo Alura">
+      </a>
+    </nav>
+  </header>
+
+  <main class="container-geral">
+    <section class="container-geral__entrada">
+      <textarea name="text" cols="30" rows="10" class="container-geral__textarea"
+        id="entrada-texto"> Digite seu texto. </textarea>
+      <section class="container-geral__informacao">
+        <p> Apenas letras minúsculas e sem acentos. </p>
+      </section>
+
+      <section class="container-geral__botoes">
+        <button class="container-geral__botoes__codificar" id="botao-codificar">
+          Codificar
+        </button>
+        <button class="container-geral__botoes__decodificar" id="botao-decodificar">
+          Decodificar
+        </button>
+      </section>
+    </section>
+
+    <section class="container-geral__resultado">
+      <div id="saida">
+        <div class="container-geral__imagem" id="nenhum-texto">
+          <img src="assets/nenhumText.jpg" alt="search">
+        </div>
+        <h2 class="container-geral__resultado__vazio" id="nenhum-texto2">
+          Nenhuma mensagem encontrada
+        </h2>
+        <p class="container-geral__resultado__instrucao" id="saida-texto">
+          Digite um texto que você queira codificar ou decodificar.
+        </p>
+      </div>
+      <button class="botaocopiar" id="botao-copiar">Copiar</button>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido por Thalya</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

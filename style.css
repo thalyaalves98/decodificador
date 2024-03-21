@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap');
+
+:root {
+  --cor-primaria: #ffffff;
+  --cor-secundaria: #525564;
+  --cor-terciaria: #0A3871;
+  --cor-quartenaria: #b9cce4;
+
+  --fonte: 'Inter', sans-serif;
+
+  --tam-fonte-grande: 2.25rem;
+  --tam-fonte-media: 1.5rem;
+  --tam-fonte-pequena: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-primaria);
+  font-family: var(--fonte);
+}
+
+.logo {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.container-geral {
+  display: inline;
+  font-family: var(--fonte);
+}
+
+.container-geral__entrada {
+  float: left;
+  text-align: left;
+  margin: 5rem;
+  margin-top: 1rem;
+}
+
+.container-geral__textarea {
+  width: 600px;
+  height: 300px;
+  margin-top: 4rem;
+  resize: none;
+  color: var(--cor-secundaria);
+  font-size: var(--tam-fonte-media);
+  font-family: var(--fonte);
+  background: none;
+  font-weight: 200px;
+  border: none;
+}
+
+.container-geral__informacao {
+  align-items: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: var(--tam-fonte-pequena);
+  color: var(--cor-secundaria);
+}
+
+.container-geral__botoes {
+  display: flex;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-geral__botoes__codificar,
+.container-geral__botoes__decodificar {
+  margin: 0.5rem;
+  height: 4rem;
+  border-radius: 1rem;
+  border: 2px solid var(--cor-terciaria);
+  width: 50%;
+  font-size: var(--tam-fonte-pequena);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte);
+}
+
+.container-geral__botoes__codificar:hover,
+.container-geral__botoes__decodificar:hover,
+.botaocopiar:hover {
+  background-color: var(--cor-quartenaria);
+}
+
+.container-geral__resultado {
+  margin: 2rem;
+  padding: 1rem;
+  background: var(--cor-primaria);
+  border-radius: 1rem;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte);
+}
+
+.container-geral__imagem,
+.container-geral__resultado__vazio,
+.container-geral__resultado__instrucao,
+.botaocopiar {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 400px;
+}
+
+.botaocopiar {
+  display: center;
+  float: right;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem;
+  height: 4rem;
+  width: 25%;
+  border-radius: 1rem;
+  border: 2px solid var(--cor-terciaria);
+  font-size: var(--tam-fonte-pequena);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte);
+}
+
+
+.rodape {
+  display: center;
+  width: 100%;
+  float: left;
+  padding: 2rem;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  text-align: center;
+  font-family: var(--fonte);
+  font-size: var(--tam-fonte-pequena);
+  font-weight: 400;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-geral__esquerda {
+    text-align: left;
+  }
+
+  .container-geral__textarea {
+    width: 700px;
+    height: 400px;
+    margin-left: 1rem;
+  }
+}
